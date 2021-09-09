@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SplashActivity">
+
+        <TextView
+            android:id="@+id/kekodNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/dsr"
+            android:text="@string/splash_title"
+            android:textColor="@color/orange"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/mars"
+            app:lottie_speed="1.3" />
+    </LinearLayout>
+</layout>

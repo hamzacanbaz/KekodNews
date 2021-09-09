@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="mainActivity"
+            type="com.canbazdev.kekodnews.MainActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#DFDEDE"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             >
+            <ImageView
+                android:src="@drawable/ic_baseline_dehaze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ivleftimagetoolbar" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toolbar_title"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_baseline_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ivsearchimagetoolbar" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <LinearLayout
+
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/fullScreenFrameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:onClick="@{() -> mainActivity.onClickNews()}"
+                    android:id="@+id/firstFrameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <FrameLayout
+                    android:onClick="@{() -> mainActivity.onClickNews()}"
+                    android:id="@+id/secondFrameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:onClick="@{() -> mainActivity.onClickNews()}"
+                    android:id="@+id/secondFrameLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:onClick="@{() -> mainActivity.onClickNews()}"
+                    android:id="@+id/secondFrameLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:onClick="@{() -> mainActivity.onClickNews()}"
+                            android:id="@+id/thirdFrameLayout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <FrameLayout
+                            android:onClick="@{() -> mainActivity.onClickNews()}"
+                            android:id="@+id/thirdFrameLayout2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <FrameLayout
+                            android:onClick="@{() -> mainActivity.onClickNews()}"
+                            android:id="@+id/thirdFrameLayout3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <FrameLayout
+                            android:onClick="@{() -> mainActivity.onClickNews()}"
+                            android:id="@+id/thirdFrameLayout4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+<!--                <FrameLayout-->
+<!--                    android:onClick="@{() -> mainActivity.onClickNews()}"-->
+<!--                    android:id="@+id/fourthFrameLayout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+
+                <FrameLayout
+                    android:onClick="@{() -> mainActivity.onClickNews()}"
+                    android:id="@+id/fifthFrameLayout"
+                    android:name="com.canbazdev.kekodnews.view.FourthFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:onClick="@{() -> mainActivity.onClickNews()}"
+                    android:id="@+id/sixthFrameLayout"
+                    android:name="com.canbazdev.kekodnews.view.FourthFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:onClick="@{() -> mainActivity.onClickNews()}"
+                    android:id="@+id/seventhFrameLayout"
+                    android:name="com.canbazdev.kekodnews.view.FourthFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:onClick="@{() -> mainActivity.onClickNews()}"
+                    android:id="@+id/eighthFrameLayout"
+                    android:name="com.canbazdev.kekodnews.view.FourthFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:onClick="@{() -> mainActivity.onClickNews()}"
+                    android:id="@+id/ninthFrameLayout"
+                    android:name="com.canbazdev.kekodnews.view.FourthFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

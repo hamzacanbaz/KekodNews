@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">KekodNews</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text">They live in a seemingly glamorous world of gorgeous clothes, first-class travel, other beautiful people, and earn millions of dollars.
+
+Yet, like the rest of us mere mortals, they have been greatly affected by the pandemic.
+
+With coronavirus grounding airlines and putting a stop to large gatherings, fashion weeks and shoots were cancelled. So the worlds top fashion models were stuck at home the same as everyone else.
+
+For the first time since Covid, this week New York Fashion Week will take place largely in-person, marking a tentative return to the runway and normal business for the fashion industry.
+
+Here four leading models talk about their experiences over the past 18 months, and why social media, and especially Instagram, has become more important than ever.</string>
+    <string name="text2">"I had some brands send me [their] clothes to shoot. I set up a backdrop in my living room, steamed the clothes, and set up a self-timer on my camera to capture content, and then sent the images for them to use.
+
+"This was challenging, but I had to adapt. As time went on, modelling shoots began to start happening again, but with limited people on set."
+
+She admits, however, that her earnings did take a hit. "There were months where the pay checks slowed down tremendously."
+
+As a result she says she was grateful to have her own online fashion brand, Naked Species, to bring in a steady income.
+
+With less work for fashion magazines, Corrigan focused more on Instagram collaborations with brands, posting selfie photos of her wearing their clothes on the social media platform.</string>
+    <string name="splash_title">Kekod News</string>
+    <string name="toolbar_title">Kekod News</string>
+    <string name="ivleftimagetoolbar">ivleftImageToolbar</string>
+    <string name="ivsearchimagetoolbar">ivSearchImageToolbar</string>
+    <string name="detailFragmentNewsImage">newsImage</string>
+    <string name="FifthFragmentNewsimage">newsImage</string>
+</resources>
