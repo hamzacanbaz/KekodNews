@@ -1,92 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.FifthFragment"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.google.android.material.card.MaterialCardView
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        app:cardCornerRadius="10dp"
+<!--    <data>-->
+<!--        <variable-->
+<!--            name="fifthNews"-->
+<!--            type="com.canbazdev.kekodnews.FifthNews" />-->
+
+<!--    </data>-->
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="8dp"
+        tools:context=".view.FifthFragment">
 
-        >
-        <LinearLayout
-            android:orientation="horizontal"
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:cardElevation="8dp"
 
-            <ImageView
-                android:scaleType="fitXY"
-                android:src="@drawable/taxi"
-                android:layout_weight="5"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/FifthFragmentNewsimage" />
+            >
+
             <LinearLayout
-                android:layout_weight="3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/taxi"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/FifthFragmentNewsimage" />
+
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:textColor="#283593"
-                        android:textStyle="bold"
-                        android:layout_margin="10dp"
-                        android:text="2 yolcu uçağı çarpıştı"
-                        android:layout_weight="1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"/>
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    <CheckBox
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="end"
-                        android:button="@drawable/selector_add_favs"
-                        app:useMaterialThemeColors="false" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#283593"
+                            android:textStyle="bold"
+                            android:layout_margin="10dp"
+                            android:text="Canadian teen Leylah Fernandez's long shot"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            android:button="@drawable/selector_add_favs"
+                            app:useMaterialThemeColors="false" />
 
 
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:drawablePadding="7dp"
+                            android:layout_margin="10dp"
+                            android:text="Jun 10, 2021"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:drawableStartCompat="@drawable/ic_baseline_calendar_today" />
+
+                        <TextView
+                            android:drawablePadding="7dp"
+                            android:drawableStart="@drawable/ic_baseline_access_time"
+                            android:layout_margin="10dp"
+                            android:text="7 min read"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:drawablePadding="7dp"
-                        android:layout_margin="10dp"
-                        android:text="Jun 10, 2021"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:drawableStartCompat="@drawable/ic_baseline_calendar_today" />
-
-                    <TextView
-                        android:drawablePadding="7dp"
-                        android:drawableStart="@drawable/ic_baseline_access_time"
-                        android:layout_margin="10dp"
-                        android:text="10 min read"
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-
-                </LinearLayout>
 
             </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-</FrameLayout>
+    </FrameLayout>
+</layout>

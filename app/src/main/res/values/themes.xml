@@ -2,6 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.KekodNews" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
+        <item name="fontFamily">@font/mr</item>
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">#EF6C00</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -13,8 +14,10 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-    <style name="roundedCorners" >
+
+    <style name="roundedCorners">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">10%</item>
     </style>
+
 </resources>
