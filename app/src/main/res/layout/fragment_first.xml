@@ -8,7 +8,7 @@
 
         <variable
             name="briefingInfo"
-            type="com.canbazdev.kekodnews.Briefing" />
+            type="com.canbazdev.kekodnews.model.Briefing" />
     </data>
 
     <FrameLayout

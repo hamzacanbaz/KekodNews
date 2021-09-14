@@ -7,7 +7,7 @@
 
         <variable
             name="mainActivity"
-            type="com.canbazdev.kekodnews.MainActivity" />
+            type="com.canbazdev.kekodnews.view.MainActivity" />
 
     </data>
 
@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#DFDEDE"
-        tools:context=".MainActivity">
+        tools:context=".view.MainActivity">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -71,82 +71,82 @@
                     android:id="@+id/firstFrameLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{() -> mainActivity.onClickNews()}" />
+                    android:onClick="@{() -> mainActivity.onClickFragment(firstFrameLayout)}" />
 
 
                 <FrameLayout
                     android:id="@+id/secondFrameLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{() -> mainActivity.onClickNews1()}" />
+                    android:onClick="@{() -> mainActivity.onClickFragment(secondFrameLayout)}" />
 
                 <FrameLayout
                     android:id="@+id/thirdFrameLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{() -> mainActivity.onClickNews2()}" />
+                    android:onClick="@{() -> mainActivity.onClickFragment(thirdFrameLayout)}" />
 
                 <FrameLayout
                     android:id="@+id/fourthFrameLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{() -> mainActivity.onClickNews3()}" />
+                    android:onClick="@{() -> mainActivity.onClickFragment(fourthFrameLayout)}" />
 
 
                 <FrameLayout
                     android:id="@+id/fifthFrameLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{() -> mainActivity.onClickNews4()}" />
+                    android:onClick="@{() -> mainActivity.onClickFragment(fifthFrameLayout)}" />
 
                 <FrameLayout
                     android:id="@+id/sixthFrameLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{() -> mainActivity.onClickNews5()}" />
+                    android:onClick="@{() -> mainActivity.onClickFragment(sixthFrameLayout)}" />
 
                 <FrameLayout
                     android:id="@+id/seventhFrameLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{() -> mainActivity.onClickNews6()}" />
+                    android:onClick="@{() -> mainActivity.onClickFragment(seventhFrameLayout)}" />
 
                 <FrameLayout
                     android:id="@+id/eighthFrameLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{() -> mainActivity.onClickNews7()}" />
+                    android:onClick="@{() -> mainActivity.onClickFragment(eighthFrameLayout)}" />
 
 
                 <FrameLayout
                     android:id="@+id/ninthFrameLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{() -> mainActivity.onClickNews8()}" />
+                    android:onClick="@{() -> mainActivity.onClickFragment(ninthFrameLayout)}" />
 
                 <FrameLayout
                     android:id="@+id/tenthFrameLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{() -> mainActivity.onClickNews9()}" />
+                    android:onClick="@{() -> mainActivity.onClickFragment(tenthFrameLayout)}" />
 
                 <FrameLayout
                     android:id="@+id/eleventhFrameLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{() -> mainActivity.onClickNews10()}" />
+                    android:onClick="@{() -> mainActivity.onClickFragment(eleventhFrameLayout)}" />
 
                 <FrameLayout
                     android:id="@+id/twelfthFrameLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{() -> mainActivity.onClickNews11()}" />
+                    android:onClick="@{() -> mainActivity.onClickFragment(twelfthFrameLayout)}" />
 
                 <FrameLayout
                     android:id="@+id/thirteenthFrameLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{() -> mainActivity.onClickNews12()}" />
+                    android:onClick="@{() -> mainActivity.onClickFragment(thirteenthFrameLayout)}" />
             </LinearLayout>
         </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>

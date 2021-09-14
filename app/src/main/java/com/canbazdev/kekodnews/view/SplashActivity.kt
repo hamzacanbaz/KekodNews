@@ -1,4 +1,4 @@
-package com.canbazdev.kekodnews
+package com.canbazdev.kekodnews.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.os.CountDownTimer
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.canbazdev.kekodnews.R
 import com.canbazdev.kekodnews.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
@@ -19,7 +20,7 @@ class SplashActivity : AppCompatActivity() {
 //        _binding = ActivitySplashBinding.inflate(layoutInflater)
 
 
-        val slideAnimation = AnimationUtils.loadAnimation(this,R.anim.alpha)
+        val slideAnimation = AnimationUtils.loadAnimation(this, R.anim.alpha)
         binding.kekodNews.startAnimation(slideAnimation)
 
         object : CountDownTimer(3800, 1000) {

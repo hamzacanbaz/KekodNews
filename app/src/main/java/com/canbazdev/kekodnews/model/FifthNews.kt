@@ -1,11 +1,9 @@
-package com.canbazdev.kekodnews
-
-import android.graphics.Bitmap
+package com.canbazdev.kekodnews.model
 
 data class FifthNews(
     val time: String?,
     val date: String?,
-    val image: Bitmap?,
+    val image: Int?,
     val title: String?
 
 )

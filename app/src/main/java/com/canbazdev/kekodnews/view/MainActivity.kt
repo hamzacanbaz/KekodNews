@@ -1,12 +1,12 @@
-package com.canbazdev.kekodnews
+package com.canbazdev.kekodnews.view
 
 import android.os.Bundle
 import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import com.canbazdev.kekodnews.R
 import com.canbazdev.kekodnews.databinding.ActivityMainBinding
-import com.canbazdev.kekodnews.view.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var twelfthFragment: FifthFragment
     private lateinit var thirteenthFragment: FifthFragment
     private lateinit var fragmentList: ArrayList<Fragment>
-//    private lateinit var detailFragment: ThirdFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,10 +52,7 @@ class MainActivity : AppCompatActivity() {
         eleventhFragment = FifthFragment.newInstance()
         twelfthFragment = FifthFragment.newInstance()
         thirteenthFragment = FifthFragment.newInstance()
-//        detailFragment = ThirdFragment.newInstance()
 
-        //Handle when activity is recreated like on orientation Change
-//        shouldDisplayHomeUp()
 
         fragmentList =
             arrayListOf(
@@ -80,130 +76,118 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun onClickNews() {
-        fragmentList.remove(firstFragment)
-        removeAllFragmentsAndAddDetailFragment(
-            fragmentList,
-            binding.firstFrameLayout,
-            firstFragment
-        )
-    }
+    fun onClickFragment(view: FrameLayout) {
+        println(binding.firstFrameLayout.id)
+        when (view.id) {
+            binding.firstFrameLayout.id -> {
+                fragmentList.remove(firstFragment)
+                removeAllFragmentsAndAddDetailFragment(
+                    fragmentList,
+                    binding.firstFrameLayout,
+                    firstFragment
+                )
+            }
+            binding.secondFrameLayout.id -> {
+                fragmentList.remove(secondFragment)
+                removeAllFragmentsAndAddDetailFragment(
+                    fragmentList,
+                    binding.secondFrameLayout,
+                    secondFragment
+                )
+            }
+            binding.thirdFrameLayout.id -> {
+                fragmentList.remove(thirdFragment)
+                removeAllFragmentsAndAddDetailFragment(
+                    fragmentList,
+                    binding.thirdFrameLayout,
+                    thirdFragment
+                )
+            }
+            binding.fourthFrameLayout.id -> {
+                fragmentList.remove(fourthFragment)
+                removeAllFragmentsAndAddDetailFragment(
+                    fragmentList,
+                    binding.fourthFrameLayout,
+                    fourthFragment
+                )
+            }
+            binding.fifthFrameLayout.id -> {
+                fragmentList.remove(fifthFragment)
+                removeAllFragmentsAndAddDetailFragment(
+                    fragmentList,
+                    binding.fifthFrameLayout,
+                    fifthFragment
+                )
+            }
+            binding.sixthFrameLayout.id -> {
+                fragmentList.remove(sixthFragment)
+                removeAllFragmentsAndAddDetailFragment(
+                    fragmentList,
+                    binding.sixthFrameLayout,
+                    sixthFragment
+                )
+            }
+            binding.seventhFrameLayout.id -> {
+                fragmentList.remove(seventhFragment)
+                removeAllFragmentsAndAddDetailFragment(
+                    fragmentList,
+                    binding.seventhFrameLayout,
+                    seventhFragment
+                )
+            }
+            binding.eighthFrameLayout.id -> {
+                fragmentList.remove(eighthFragment)
+                removeAllFragmentsAndAddDetailFragment(
+                    fragmentList,
+                    binding.eighthFrameLayout,
+                    eighthFragment
+                )
+            }
+            binding.ninthFrameLayout.id -> {
+                fragmentList.remove(ninthFragment)
+                removeAllFragmentsAndAddDetailFragment(
+                    fragmentList,
+                    binding.ninthFrameLayout,
+                    ninthFragment
+                )
+            }
+            binding.tenthFrameLayout.id -> {
+                fragmentList.remove(tenthFragment)
+                removeAllFragmentsAndAddDetailFragment(
+                    fragmentList,
+                    binding.tenthFrameLayout,
+                    tenthFragment
+                )
+            }
+            binding.eleventhFrameLayout.id -> {
+                fragmentList.remove(eleventhFragment)
+                removeAllFragmentsAndAddDetailFragment(
+                    fragmentList,
+                    binding.eleventhFrameLayout,
+                    eleventhFragment
+                )
+            }
+            binding.twelfthFrameLayout.id -> {
+                fragmentList.remove(twelfthFragment)
+                removeAllFragmentsAndAddDetailFragment(
+                    fragmentList,
+                    binding.twelfthFrameLayout,
+                    twelfthFragment
+                )
+            }
+            binding.thirteenthFrameLayout.id -> {
+                fragmentList.remove(thirteenthFragment)
+                removeAllFragmentsAndAddDetailFragment(
+                    fragmentList,
+                    binding.thirteenthFrameLayout,
+                    thirteenthFragment
+                )
+            }
+            else -> {
+                println("ah")
+            }
+        }
 
-    fun onClickNews1() {
-        fragmentList.remove(secondFragment)
-        removeAllFragmentsAndAddDetailFragment(
-            fragmentList,
-            binding.secondFrameLayout,
-            secondFragment
-        )
-
-    }
-
-    fun onClickNews2() {
-        fragmentList.remove(thirdFragment)
-        removeAllFragmentsAndAddDetailFragment(
-            fragmentList,
-            binding.thirdFrameLayout,
-            thirdFragment
-        )
-
-    }
-
-    fun onClickNews3() {
-        fragmentList.remove(fourthFragment)
-        removeAllFragmentsAndAddDetailFragment(
-            fragmentList,
-            binding.fourthFrameLayout,
-            fourthFragment
-        )
-
-    }
-
-    fun onClickNews4() {
-        fragmentList.remove(fifthFragment)
-        removeAllFragmentsAndAddDetailFragment(
-            fragmentList,
-            binding.fifthFrameLayout,
-            fifthFragment
-        )
-    }
-
-    fun onClickNews5() {
-        fragmentList.remove(sixthFragment)
-        removeAllFragmentsAndAddDetailFragment(
-            fragmentList,
-            binding.sixthFrameLayout,
-            sixthFragment
-        )
-
-    }
-
-    fun onClickNews6() {
-        fragmentList.remove(seventhFragment)
-        removeAllFragmentsAndAddDetailFragment(
-            fragmentList,
-            binding.seventhFrameLayout,
-            seventhFragment
-        )
-
-    }
-
-    fun onClickNews7() {
-        fragmentList.remove(eighthFragment)
-        removeAllFragmentsAndAddDetailFragment(
-            fragmentList,
-            binding.eighthFrameLayout,
-            eighthFragment
-        )
-
-    }
-
-    fun onClickNews8() {
-        fragmentList.remove(ninthFragment)
-        removeAllFragmentsAndAddDetailFragment(
-            fragmentList,
-            binding.ninthFrameLayout,
-            ninthFragment
-        )
-
-    }
-
-    fun onClickNews9() {
-        fragmentList.remove(tenthFragment)
-        removeAllFragmentsAndAddDetailFragment(
-            fragmentList,
-            binding.tenthFrameLayout,
-            tenthFragment
-        )
-
-    }
-
-    fun onClickNews10() {
-        fragmentList.remove(eleventhFragment)
-        removeAllFragmentsAndAddDetailFragment(
-            fragmentList,
-            binding.eleventhFrameLayout,
-            eleventhFragment
-        )
-    }
-
-    fun onClickNews11() {
-        fragmentList.remove(twelfthFragment)
-        removeAllFragmentsAndAddDetailFragment(
-            fragmentList,
-            binding.twelfthFrameLayout,
-            twelfthFragment
-        )
-
-    }
-
-    fun onClickNews12() {
-        fragmentList.remove(thirteenthFragment)
-        removeAllFragmentsAndAddDetailFragment(
-            fragmentList,
-            binding.thirteenthFrameLayout,
-            thirteenthFragment
-        )
     }
 
     private fun addAllFragments() {
@@ -224,7 +208,7 @@ class MainActivity : AppCompatActivity() {
         transaction.add(binding.eleventhFrameLayout.id, eleventhFragment)
         transaction.add(binding.twelfthFrameLayout.id, twelfthFragment)
         transaction.add(binding.thirteenthFrameLayout.id, thirteenthFragment)
-//        transaction.addToBackStack(null)
+        transaction.addToBackStack(null)
         transaction.commit()
 
 
@@ -236,7 +220,6 @@ class MainActivity : AppCompatActivity() {
         layout: FrameLayout,
         fragmentRemoved: Fragment
     ) {
-
 
         val frag = supportFragmentManager
         val tr = frag.beginTransaction()
@@ -252,11 +235,9 @@ class MainActivity : AppCompatActivity() {
         fragmentList.forEach { fragment ->
             tr.remove(fragment)
         }
-
         tr.addToBackStack(null)
         tr.commit()
         fragmentList.add(fragmentRemoved)
     }
-
 
 }

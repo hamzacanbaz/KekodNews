@@ -1,12 +1,12 @@
 package com.canbazdev.kekodnews.view
 
-import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import com.canbazdev.kekodnews.SecondNews
+import com.canbazdev.kekodnews.model.SecondNews
 import com.canbazdev.kekodnews.databinding.FragmentSecondBinding
 
 
@@ -17,20 +17,17 @@ class SecondFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        _binding = FragmentSecondBinding.inflate(layoutInflater, container, false)
+    ): View {
 
-//        val icon = BitmapFactory.decodeResource(
-//            requireContext().resources,
-//            com.canbazdev.kekodnews.R.drawable.taxi
-//        )
-//        binding.secondNews = SecondNews(
-//            "Hamza Canbaz",
-//            "5 hours ago",
-//            icon,
-//            "Denmark tells some migrants to work for benefits Lebanon gets new government amid deepening crisis"
-//        )
+        _binding =
+            DataBindingUtil.inflate(layoutInflater, com.canbazdev.kekodnews.R.layout.fragment_second, container, false)
+
+        binding.secondNews = SecondNews(
+            "Hamza Canbaz",
+            "5 hours ago",
+            com.canbazdev.kekodnews.R.drawable.taxi,
+            "Denmark tells some migrants to work for benefits Lebanon gets new government amid deepening crisis"
+        )
 
         return binding.root
     }
@@ -38,5 +35,10 @@ class SecondFragment : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() = SecondFragment()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
